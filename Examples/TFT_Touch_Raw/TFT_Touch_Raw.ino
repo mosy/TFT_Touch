@@ -40,10 +40,10 @@ Adapted by Rowboteer 13/5/15
 */
 
 // These are the pins used to interface between the 2046 touch controller and Arduino Mega
-#define DOUT A0  /* Data out pin (T_DO) of touch screen */
-#define DIN  A2  /* Data in pin (T_DIN) of touch screen */
-#define DCS  9  /* Chip select pin (T_CS) of touch screen */
-#define DCLK 8  /* Clock pin (T_CLK) of touch screen */
+#define DOUT 39  /* Data out pin (T_DO) of touch screen */
+#define DIN  32  /* Data in pin (T_DIN) of touch screen */
+#define DCS  33  /* Chip select pin (T_CS) of touch screen */
+#define DCLK 25  /* Clock pin (T_CLK) of touch screen */
 
 // These are the default min and maximum values, set to 0 and 4095 to test the screen
 #define HMIN 0

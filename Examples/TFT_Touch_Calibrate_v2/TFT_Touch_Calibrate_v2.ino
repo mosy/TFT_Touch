@@ -18,22 +18,21 @@ Created by Rowboteer for the ILI9341 3.4" 320 x 240 TFT touch display: 22/11/15
 #define VRES 240
 
 // Call up the TFT driver library
-#include <TFT_ILI9341.h> // Hardware-specific TFT library
 #include <SPI.h>
-
+#include "TFT_eSPI.h"
 // Call up touch screen library
 #include <TFT_Touch.h>
 
 // Invoke custom TFT driver library
-TFT_ILI9341 tft = TFT_ILI9341();       // Invoke custom library
+TFT_eSPI tft = TFT_eSPI();
 
 // These are the pins I used to interface between the 2046 touch controller and Arduino Mega
 // they can be changed to other digital pins
 
-#define DOUT A0  /* Data out pin (T_DO) of touch screen */
-#define DIN  A2  /* Data in pin (T_DIN) of touch screen */
-#define DCS  9  /* Chip select pin (T_CS) of touch screen */
-#define DCLK 8  /* Clock pin (T_CLK) of touch screen */
+#define DOUT 39  /* Data out pin (T_DO) of touch screen */
+#define DIN  32  /* Data in pin (T_DIN) of touch screen */
+#define DCS  33  /* Chip select pin (T_CS) of touch screen */
+#define DCLK 25  /* Clock pin (T_CLK) of touch screen */
 //                  The touch screen interrupt request pin (T_IRQ) is not used
 
 /* Create an instance of the touch screen library */
